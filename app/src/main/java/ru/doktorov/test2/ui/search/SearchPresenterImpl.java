@@ -94,7 +94,9 @@ public class SearchPresenterImpl implements SearchPresenter {
         for (GsonBooks.Item item : gsonBooks.items) {
             Book book = new Book();
             book.setIdGoogle(item.id);
-            book.setThumbnail(item.volumeInfo.imageLinks.thumbnail);
+            if (item.volumeInfo.imageLinks != null && item.volumeInfo.imageLinks.thumbnail != null) {
+                book.setThumbnail(item.volumeInfo.imageLinks.thumbnail);
+            }
             book.setTitle(item.volumeInfo.title);
             if (item.volumeInfo.authors != null) {
                 book.setAuthors(TextUtils.join(", ", item.volumeInfo.authors));

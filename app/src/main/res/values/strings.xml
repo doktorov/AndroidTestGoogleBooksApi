@@ -4,7 +4,7 @@
     <string name="search">Поиск</string>
     <string name="favorites">Избранное</string>
 
-    <string name="search_title">Название, автор или ISBN</string>
+    <string name="search_title">Название или автор</string>
     <string name="loading">Загрузка…</string>
 
     <string name="add_to_favorites">Добавить в избранное</string>
