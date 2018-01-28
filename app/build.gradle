@@ -40,8 +40,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
     // Dependency Injection
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
-    implementation 'com.google.dagger:dagger:2.11'
+    implementation 'com.google.dagger:dagger:2.13'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.13'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.13'
+    implementation 'com.google.dagger:dagger-android-support:2.13'
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
