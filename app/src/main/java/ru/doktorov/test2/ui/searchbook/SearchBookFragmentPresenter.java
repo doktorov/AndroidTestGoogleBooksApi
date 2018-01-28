@@ -1,14 +1,13 @@
 package ru.doktorov.test2.ui.searchbook;
 
-import javax.inject.Inject;
+import ru.doktorov.test2.model.Book;
 
-public class SearchBookFragmentPresenter {
-    private SearchBookFragmentView searchBookFragmentView;
+public interface SearchBookFragmentPresenter {
+    void setView(SearchBookFragmentView view);
 
-    @Inject
-    public SearchBookFragmentPresenter(SearchBookFragmentView searchBookFragmentView) {
-        this.searchBookFragmentView = searchBookFragmentView;
+    void searchBooks(String query);
 
-        searchBookFragmentView.onDetailFragmentLoaded();
-    }
+    void searchBooksNext(String query, int next);
+
+    void addToFavorites(Book book);
 }

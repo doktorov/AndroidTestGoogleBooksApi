@@ -41,8 +41,8 @@ public class SearchListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     private Books mBooks;
 
-    SearchListAdapter(RecyclerView recyclerView, OnLoadMoreListener onLoadMoreListener,
-                      OnItemClickListener onItemClickListener) {
+    public SearchListAdapter(RecyclerView recyclerView, OnLoadMoreListener onLoadMoreListener,
+                             OnItemClickListener onItemClickListener) {
         mOnLoadMoreListener = onLoadMoreListener;
         mOnItemClickListener = onItemClickListener;
 
