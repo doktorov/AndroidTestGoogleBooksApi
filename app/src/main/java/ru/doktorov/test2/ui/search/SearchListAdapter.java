@@ -74,7 +74,7 @@ public class SearchListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         notifyDataSetChanged();
     }
 
-    void setNextBooks(Books books) {
+    public void setNextBooks(Books books) {
         mBooks.addBooks(books.getBooks());
 
         setLoaded();
